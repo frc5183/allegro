@@ -11,7 +11,7 @@ project(allegro)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 include_directories(${PROJECT_NAME} PUBLIC ./include)
-add_executable(${PROJECT_NAME} ./src/main.cpp ./src/Logger.cpp)
+add_executable(${PROJECT_NAME} ./src/main.cpp ./src/Logger.cpp ./src/Kinect.cpp)
 #wpilib
 target_link_directories(${PROJECT_NAME} PUBLIC ${WPILIB_SHARED})
 include_directories(${WPILIB_INCLUDE})
